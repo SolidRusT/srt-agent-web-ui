@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+  <body>
+<%- include('partials/_header.ejs') %>
+    <main role="main" class="container mt-4">
+      <div class="chat-container">
+        <div id="chat-box" class="chat-box"></div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Type a message..." required class="form-control">
+          <button type="submit" class="btn btn-primary mt-2">Send</button>
+        </form>
+      </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+  </body>
+<%- include('partials/_footer.ejs') %>
+</html>
